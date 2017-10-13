@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>NY Times Search</title>
+
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- MY CSS Style Sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <h1><i class="icon-globe"></i>New York Times Search</h1>
+    </div>
+<!-- search features go here -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title general-title"> Search Parameters</h2>
+      </div>
+      <div class="panel-body">
+        <div class="text-area">
+          <p> Search Term:</p><input class="span3" id="searchTerm" type="text" name="SearchTerm">
+        </div>
+        <div class="text-area">
+          <p>Number of Records to Retrieve</p><input class="input-xxlarge" id="records" type="text" name="numberOfRecords">
+        </div>
+        <div class="text-area">
+          <p>Start Year (Optional)</p><input class="input-xxlarge" id="startYear" type="text" name="startYear">
+        </div>
+        <div class="text-area">
+          <p>End Year (Optional)</p><input class="input-xxlarge" id="endYear" type="text" name="endYear">
+        </div>
+        <div id="buttons">
+          <button type="button" class="btn btn-info" id="searchSubmit"><i class="icon-search"></i>Search</button>
+          <button type="button" class="btn btn-inverse" id="clearResults"><i class="icon-trash"></i>Clear Results</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- search results goes below here-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title general-title"> Top Articles</h2>
+      </div>
+      <div class="panel-body">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
